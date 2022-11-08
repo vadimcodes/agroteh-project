@@ -36,16 +36,21 @@
 
 ```
 
+<!DOCTYPE html>
+<html lang="ru" class="page">
+@include('partials/head.html')
 <body class="page__body">
   <div class="site-container">
     @include('partials/header.html')
     <main class="main">
       @include('partials/hero.html')
+      @include('partials/work.html')
       @include('partials/blog.html')
     </main>
     @include('partials/footer.html')
   </div>
 </body>
+</html>
 
 ```
 
@@ -75,4 +80,4 @@
 ## Дополнительно
 
 1. Ссылка на сборку [Gulp с описанием](https://github.com/maxdenaro/gulp-maxgraph);
-2. Рекомендации при разработке [сайтов](https://weblind.ru/inner.html): 
+2. Рекомендации при разработке [сайтов](https://weblind.ru/inner.html)
