@@ -52,7 +52,8 @@
 ## Правила CSS
 
 1. Соблюдение синктаксиса и порядка свойств CSS: [Код-стайл](https://codeguide.maxgraph.ru/);
-2. Использование SCSS: [Гайд SCSS](https://sass-scss.ru/guide/).
+2. Использование SCSS: [Гайд SCSS](https://sass-scss.ru/guide/);
+3. Проверка на [наличие ошибок в CSS](https://validator.w3.org/#validate_by_input)
 
 Файл `main.scss` служит только для подключения компонентов. Для компонентов предусмотренна отдельная папка `src/scss/components`
 
