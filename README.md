@@ -23,6 +23,7 @@
 
 ## Верстка HTML
 Строгое соблюдение методологии БЭМ: https://ru.bem.info/
+Проверка БЭМ на наличие ошибок: https://yoksel.github.io/html-tree/
 Проверка на наличие ошибок в верстке на всех этапах: https://validator.w3.org/#validate_by_input
 
 ## Правила CSS
