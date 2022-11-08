@@ -12,3 +12,5 @@
 ├── git push origin dev           # Запушить задание в GitHub, где `origin` ссылка на репозиторий
 
 ```
+
+`gulp build`
