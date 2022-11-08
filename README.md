@@ -20,7 +20,7 @@
 ├── git checkout -b dev           # Создать ветку, где `dev` наименование ветки
 ├── git checkout dev              # Перейти в ветку, где `dev` наименование ветки
 ├── git add .                     # Добавить объекты к коммиту, где `.` добавить все объекты
-├── git commit -m "add header"    # Коммиты (коментарии) к заданию, где `"add header"` коммит
+├── git commit -m "add header"    # Коммиты (комментарии) к заданию, где `"add header"` коммит
 ├── git push origin dev           # Запушить задание в GitHub, где `origin` ссылка на репозиторий
 
 ```
@@ -32,7 +32,7 @@
 2. [Проверка БЭМ](https://yoksel.github.io/html-tree/) на наличие ошибок;
 3. Проверка на [наличие ошибок](https://validator.w3.org/#validate_by_input) в верстке.
 
-Файл `index.html` служит только для подключения шаблонов страницы. Для шаблонов предусмотренна отдельная папка `src/partials`
+Файл `index.html` служит только для подключения шаблонов страницы. Для шаблонов предусмотрена отдельная папка `src/partials`
 
 ```
 
@@ -56,11 +56,20 @@
 
 ## Правила CSS
 
-1. Соблюдение синктаксиса и порядка свойств CSS: [Код-стайл](https://codeguide.maxgraph.ru/);
+1. Соблюдение синтаксиса и порядка свойств CSS: [Код-стайл](https://codeguide.maxgraph.ru/);
 2. Использование SCSS: [Гайд SCSS](https://sass-scss.ru/guide/);
 3. Проверка на [наличие ошибок в CSS](https://validator.w3.org/#validate_by_input)
 
-Файл `main.scss` служит только для подключения компонентов. Для компонентов предусмотренна отдельная папка `src/scss/components`
+Файл `main.scss` служит только для подключения компонентов:
+
+```
+
+@import "./components/nav";
+@import "./components/work";
+@import "./components/blog";
+
+```
+Для компонентов предусмотрена отдельная папка `src/scss/components`, пример SCSS:
 
 ```
 
