@@ -28,13 +28,14 @@
 2. [Проверка БЭМ](https://yoksel.github.io/html-tree/) на наличие ошибок
 3. Проверка на [наличие ошибок](https://validator.w3.org/#validate_by_input) в верстке
 
+> Файл `index.html` служит только для подключения компонентов страницы. Для компонентов предусмотренна отдельная папка `src/partials`
+
 ```
 <body class="page__body">
   <div class="site-container">
     @include('partials/header.html')
     <main class="main">
       @include('partials/hero.html')
-      @include('partials/work.html')
       @include('partials/blog.html')
     </main>
     @include('partials/footer.html')
