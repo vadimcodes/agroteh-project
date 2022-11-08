@@ -28,10 +28,37 @@
 2. [Проверка БЭМ](https://yoksel.github.io/html-tree/) на наличие ошибок
 3. Проверка на [наличие ошибок](https://validator.w3.org/#validate_by_input) в верстке
 
+```
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      @include('partials/hero.html')
+      @include('partials/work.html')
+      @include('partials/blog.html')
+    </main>
+    @include('partials/footer.html')
+  </div>
+</body>
+```
+
 ## Правила CSS
 
 1. Соблюдение синктаксиса и порядка свойств CSS: [Код-стайл](https://codeguide.maxgraph.ru/)
 2. Использование SCSS: [Гайд SCSS](https://sass-scss.ru/guide/)
+
+```
+.nav {
+
+    &__list {
+        margin: 0;
+    }
+
+    &__item {
+        color: red;
+    }
+}
+```
 
 ## Дополнительно
 
