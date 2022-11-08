@@ -26,6 +26,8 @@
 ```
 > Коммиты пушим только в свою персональную ветку!
 
+[Руководство по работе с Git](https://drive.google.com/file/d/1pKOyyiZbuBbTwV82lBi-80Wr-faDMquY/view)
+
 ## Верстка HTML
 
 1. Строгое соблюдение методологии [БЭМ](https://ru.bem.info/);
