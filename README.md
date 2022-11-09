@@ -26,12 +26,12 @@
 ```
 > Коммиты пушим только в свою персональную ветку!
 
-Для авторизации Git указать свои данные:
+Для авторизации Git вместо `name` и `mymal` указать свои данные:
 
 ```
 
-├── git config --global user.name "John Doe"   
-├── git config --global user.email johndoe@example.com
+├── git config --global user.name "name"   
+├── git config --global user.email mymail
 
 ```
 
