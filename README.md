@@ -26,6 +26,15 @@
 ```
 > Коммиты пушим только в свою персональную ветку!
 
+Для авторизации Git указать свои данные:
+
+```
+
+├── git config --global user.name "John Doe"   
+├── git config --global user.email johndoe@example.com
+
+```
+
 [Руководство по работе с Git](https://drive.google.com/file/d/1pKOyyiZbuBbTwV82lBi-80Wr-faDMquY/view)
 
 ## Верстка HTML
