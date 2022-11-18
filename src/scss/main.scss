@@ -1,0 +1,16 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/product";
+
+
+// подключения маленьких компонентов
+@import "./components/stepper";
+@import "./components/image-switch";
+@import "./components/product-price";
+
