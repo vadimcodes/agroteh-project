@@ -1,0 +1,18 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Roboto-Regular", sans-serif;
+  --content-width: 1240px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --light-color: #fff;
+  --prim-color: #27AE4D;
+  --dark-color: #000;
+
+  // line-height
+  --lh150: 150%;
+  --lh120: 120%;
+}
