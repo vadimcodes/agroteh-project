@@ -1,3 +1,5 @@
-import './components/slideProduct';
-import './components/stepper.js';
-import './components/swiper.js';
+// import "./components/slideProduct";
+// import "./components/stepper.js";
+// import "./components/swiper.js";
+import "./components/dropdown.js";
+import "./components/catalog.js";
