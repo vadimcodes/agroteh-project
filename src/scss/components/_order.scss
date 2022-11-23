@@ -1,0 +1,148 @@
+.order {
+
+  &__title {
+  }
+
+  &__body {
+  }
+
+  &__data {
+    grid-column: 8 span;
+  }
+
+  &__block {
+    padding: 50px 60px;
+    background-color: #F2F3F5;
+    border-radius: var(--br-8);
+
+    &:last-child {
+      margin-bottom: 60px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__note {
+    font-size: 12px;
+    margin: 0;
+    color: #8b8b8b;
+  }
+
+  &__way {
+    display: flex;
+  }
+
+  &__way-title {
+  }
+
+  &__way-subtitle {
+  }
+
+  &__info {
+    grid-column: 10/3 span;
+  }
+}
+
+.order-block {
+
+
+  &__title {
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 30px;
+    color: #8b8b8b;
+  }
+
+  &__form {
+    row-gap: 15px;
+    margin-bottom: 20px;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+  }
+
+  &__label {
+    display: flex;
+    grid-column: 6 span;
+    // margin-bottom: 15px;
+    // width: 300px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 6px 12px;
+    height: 40px;
+    border-radius: var(--br-4);
+  }
+
+  &__comment {
+    grid-column: 12 span;
+    padding: 6px 12px;
+    border-radius: var(--br-4);
+    resize: none;
+  }
+}
+
+.order-info {
+
+
+  &__data {
+    border-radius: var(--br-8);
+    display: flex;
+    // align-items: center;
+    padding: 50px 30px;
+    background-color: var(--bl-color);
+    border: var(--br-4);
+    flex-direction: column;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #DEDDDD;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__text {
+    color: #9D9D9D;
+  }
+
+  &__value {
+    font-weight: 500;
+  }
+
+  &__btn {
+    display: block;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  &__descr {
+    margin: 0;
+    font-size: 12px;
+    color: #9D9D9D;
+  }
+}

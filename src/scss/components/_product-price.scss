@@ -1,15 +1,25 @@
 .product-price {
-  margin-bottom: 17px;
+
+  margin: 0;
+  margin-bottom: 22px;
   display: flex;
   align-items: center;
 
   &__current {
-    margin-right: 12px;
+    margin-right: 6px;
     font-size: 24px;
+    font-weight: 500;
+    font-size: 18px;
   }
 
   &__old {
     font-size: 12px;
     text-decoration: line-through;
+  }
+
+  &__unit {
+    font-weight: 500;
+    font-size: 12px;
+    color: #000;
   }
 }

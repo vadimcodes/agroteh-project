@@ -2,7 +2,7 @@
 // colors
 :root {
   // base
-  --font-family: "Roboto-Regular", sans-serif;
+  --font-family: "Roboto", sans-serif;
   --content-width: 1240px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
@@ -11,8 +11,17 @@
   --light-color: #fff;
   --prim-color: #27AE4D;
   --dark-color: #000;
+  --dark-grey: #7e7e7e;
+  --card-color: #3a3e3b;
+  --bl-color: #f2f3f5;
+
 
   // line-height
   --lh150: 150%;
+  --lh130: 130%;
   --lh120: 120%;
+
+  // border
+  --br-4: 4px;
+  --br-8: 8px;
 }

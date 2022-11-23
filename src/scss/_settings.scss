@@ -12,14 +12,14 @@ html {
   height: 100%;
   font-family: var(--font-family, sans-serif);
   -webkit-text-size-adjust: 100%;
+  line-height: var(--lh130);
 }
 
 .page__body {
   margin: 0;
   min-width: 320px;
   min-height: 100%;
-  font-size: 16px;
-  line-height: var(--lh150);
+  font-size: 14px;
 }
 
 img {
@@ -57,6 +57,22 @@ a {
   cursor: pointer;
 }
 
+.btn-card {
+  color: var(--light-color);
+  font-weight: 400;
+  font-size: 14px;
+  background-color: var(--card-color);
+  padding: 8px 15px;
+  border-radius: var(--br-4);
+}
+
+.btn-prim {
+  background-color: var(--prim-color);
+  color: var(--light-color);
+  padding: 12px 15px;
+  border-radius: var(--br-4);
+}
+
 .list-reset {
   list-style: none;
   margin: 0;
@@ -64,8 +80,8 @@ a {
 }
 
 .input-reset {
-  -webkit-appearance: none;
-  appearance: none;
+  // -webkit-appearance: none;
+  // appearance: none;
   border: none;
   border-radius: 0;
   background-color: #fff;
@@ -115,4 +131,30 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--dark-color);
+  text-align: center;
+  line-height: var(--lh120);
+}
+
+.subtitle {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--dark-grey);
+  text-align: center;
+  line-height: var(--lh120);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
 }

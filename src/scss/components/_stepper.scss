@@ -1,10 +1,10 @@
 .stepper {
-  border: 1px solid rgb(156, 156, 156);
+  // border: 1px solid rgb(156, 156, 156);
   display: inline-flex;
   align-items: center;
   // max-width: 120px;
   // width: 100%;
-  width: 120px;
+  width: 90px;
   height: 40px;
   user-select: none;
   position: relative;
@@ -36,7 +36,7 @@
   top: 0;
   cursor: pointer;
   bottom: 0;
-  width: 40px;
+  width: 20px;
 }
 
 .stepper__btn--up {
