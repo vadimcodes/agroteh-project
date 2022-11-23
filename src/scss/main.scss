@@ -6,11 +6,16 @@
 
 // подключения компонентов страницы
 @import "./components/header";
-@import "./components/product";
+@import "./components/banner";
+@import "./components/cart";
+@import "./components/order";
 
 
 // подключения маленьких компонентов
 @import "./components/stepper";
+@import "./components/product";
 @import "./components/image-switch";
 @import "./components/product-price";
+@import "./components/swiper";
+@import "./components/product-slide";
 

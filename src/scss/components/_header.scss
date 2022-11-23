@@ -1,14 +1,17 @@
 .header {
-  font-family: "Roboto";
+  margin-bottom: 15px;
+
   &__top {
     background: #f5f5f5f5;
-    padding: 15px 0;
+    padding: 8px 0;
     font-size: 14px;
   }
+
   &__bottom {
-    padding: 15px 0;
+    padding: 12px 0;
     border-bottom: 1px solid #dedddd;
   }
+
   &__inner {
     display: flex;
     align-items: center;
@@ -25,17 +28,21 @@
     align-items: center;
     height: 40px;
   }
+
   &__location-name {
-    margin-left: 10px;
+    margin-left: 6px;
   }
+
   &__nav-list {
     display: flex;
   }
+
   &__nav-item {
     & + & {
       margin-left: 30px;
     }
   }
+
   &__info {
     display: flex;
     align-items: center;
@@ -63,13 +70,16 @@
     color: #a4a2a2;
     margin-bottom: 10px;
     font-weight: 400;
+
     & ~ & {
       margin-top: 20px;
     }
   }
+
   &__socials-item + &__socials-item {
     margin-top: 12px;
   }
+
   &__socials-link {
     display: flex;
     align-items: center;
@@ -115,9 +125,11 @@
       left: 0;
       right: 0;
     }
+
     &::after {
       top: -4px;
     }
+
     &::before {
       bottom: -4px;
     }
@@ -212,13 +224,19 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 55px;
+  top: 52px;
   border: 1px solid #dedddd;
-  border-radius: 4px;
+  // border-radius: 4px;
+  border-bottom-right-radius: var(--br-4);
+  border-bottom-left-radius: var(--br-4);
   display: none;
+
   &.active {
     display: flex;
+    background-color: var(--light-color);
+    z-index: 2;
   }
+
   &__left {
     padding: 30px 70px 30px 176px;
     border-right: 1px solid #cbcbcb;
@@ -236,18 +254,22 @@
     display: flex;
     justify-content: space-between;
   }
+
   &__socials-title {
     margin-bottom: 25px;
   }
+
   &__img {
     width: 215px;
     height: 215px;
     transform: rotate(-20deg);
     align-self: flex-end;
     display: none;
+
     &.show {
       display: block;
     }
+
     img {
       border-radius: 4px;
     }
@@ -258,13 +280,16 @@
   &__item + &__item {
     margin-top: 22px;
   }
+
   &__item:hover &__link span,
   &__item.active &__link span {
     color: var(--prim-color);
   }
+
   &__item:hover &__link .arrow-catalog,
   &__item.active &__link .arrow-catalog {
     transform: rotate(270deg);
+
     & {
       color: var(--prim-color);
     }
@@ -291,10 +316,12 @@
     &:hover .sub-categories__link {
       color: var(--prim-color);
     }
+
     & + & {
       margin-top: 30px;
     }
   }
+
   &__link {
     transition: 0.2s linear;
   }

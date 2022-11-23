@@ -1,0 +1,84 @@
+<section class="order">
+  <div class="container">
+    <h2 class="order__title title">
+      Оформление заказа
+    </h2>
+    <div class="order__body grid">
+      <div class="order__data">
+        <div class="order__block order-block">
+          <h3 class="order-block__title">Получатель</h3>
+          <p class="order-block__subtitle">Данные необходимы для курьера и уведомлениях о статусе вашего заказа</p>
+          <form class="order-block__form grid" action="telegram.php" method="post">
+            <label class="order-block__label">
+              <input class="order-block__input input-reset" type="text" name="name" placeholder="Фамилия*" required>
+            </label>
+            <label class="order-block__label">
+              <input class="order-block__input input-reset" type="text" name="name" placeholder="Имя*" required>
+            </label>
+            <label class="order-block__label">
+              <input class="order-block__input input-reset" type="email" name="name" placeholder="E-mail">
+            </label>
+            <label class="order-block__label">
+              <input class="order-block__input input-reset" type="tel" name="name" placeholder="Телефон">
+            </label>
+          </form>
+          <p class="order__note">* - Реквизиты обязательны к заполнению</p>
+        </div>
+        <div class="order__block order-block">
+          <h3 class="order-block__title">Способ получения заказа</h3>
+          <p class="order-block__subtitle">Укажите вариант получения вашего заказа</p>
+          <form class="order-block__form order__way" action="telegram.php" method="post">
+            <label class="order-block__label">
+              <input class="order-block__input input-reset" type="radio" name="name">
+              <span class="order__way-title">Доставка</span>
+              <p class="order__way-subtitle">Доставка по всей РФ осуществляется транспортными компаниями</p>
+            </label>
+            <label class="order-block__label">
+              <input class="order-block__input input-reset" type="radio" name="name">
+              <span class="order__way-title">Самовывоз</span>
+              <p class="order__way-subtitle">По адресу: г. Чебоксары, ул. Пристанционная, д. 3</p>
+            </label>
+          </form>
+        </div>
+        <div class="order__block order-block">
+          <h3 class="order-block__title">Получатель</h3>
+          <p class="order-block__subtitle">Данные необходимы для курьера и уведомлениях о статусе вашего заказа</p>
+          <form class="order-block__form grid" action="telegram.php" method="post">
+            <label class="order-block__label">
+              <input class="order-block__input input-reset" type="number" name="name" placeholder="Индекс*" required>
+            </label>
+            <label class="order-block__label">
+              <input class="order-block__input input-reset" type="text" name="name" placeholder="Область и город*"
+                required>
+            </label>
+            <label class="order-block__label">
+              <input class="order-block__input input-reset" type="email" name="name" placeholder="Улица*">
+            </label>
+            <label class="order-block__label">
+              <input class="order-block__input input-reset" type="tel" name="name" placeholder="Дом, строение">
+            </label>
+            <textarea class="order-block__comment input-reset" placeholder="Коментарии к доставке" name=""rows="7"></textarea>
+          </form>
+          <p class="order__note">* - Реквизиты обязательны к заполнению</p>
+        </div>
+      </div>
+      <div class="order__info order-info">
+        <div class="order-info__data">
+          <p class="order-info__title">Ваш заказ:</p>
+          <ul class="order-info__list list-reset">
+            <li class="order-info__item">
+              <span class="order-info__text">Позиций:</span>
+              <span class="order-info__value">3</span>
+            </li>
+            <li class="order-info__item">
+              <span class="order-info__text">Итого:</span>
+              <span class="order-info__value">996 000<span> руб.</span></span>
+            </li>
+          </ul>
+          <a class="btn-prim order-info__btn" href="#">Оформить заказ</a>
+          <p class="order-info__descr">После оформления наш менеджер свяжется с вами для подтверждения заказа</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

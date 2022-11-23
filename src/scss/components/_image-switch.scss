@@ -70,10 +70,10 @@
     height: 4px;
     border-radius: 100%;
     margin: 0 3px;
-    background-color: #c4c4c4;
+    background-color: rgba(183, 180, 180, 0.45);
 
     &--active {
-      background-color: #6078f1;
+      background-color: var(--prim-color);
     }
   }
 }
