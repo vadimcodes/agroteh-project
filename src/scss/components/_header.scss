@@ -195,9 +195,12 @@
     color: var(--light-color);
     width: 18px;
     height: 18px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
+    &.active {
+      display: flex;
+    }
   }
 }
 
