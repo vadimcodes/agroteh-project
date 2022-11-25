@@ -53,8 +53,8 @@
     top: 25px;
     right: 0;
     display: none;
-    width: 202px;
-    padding: 30px;
+    width: 210px;
+    padding: 20px 30px;
     background: var(--light-color);
     box-shadow: 27px 27px 15px rgba(84, 84, 84, 0.01),
       15px 15px 13px rgba(84, 84, 84, 0.05), 7px 7px 10px rgba(84, 84, 84, 0.09),
@@ -96,8 +96,14 @@
     border-radius: 4px;
     width: 22px;
     height: 22px;
+    transition: border .1s ease-in-out;
+
+    &:hover, &:focus {
+      border: 2px solid #636363;
+    }
   }
   &__catalog-btn {
+    height: 40px;
     background: var(--prim-color);
     border-radius: 4px;
     padding: 10px 15px;
@@ -107,10 +113,10 @@
   }
   &__catalog-btn__text {
     color: var(--light-color);
-    margin-left: 5px;
+    margin-left: 8px;
   }
   &__catalog-btn__icon {
-    width: 16px;
+    width: 18px;
     height: 2px;
     background: var(--light-color);
     display: block;
@@ -127,11 +133,11 @@
     }
 
     &::after {
-      top: -4px;
+      top: -6px;
     }
 
     &::before {
-      bottom: -4px;
+      bottom: -6px;
     }
   }
   &__search {
