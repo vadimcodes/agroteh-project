@@ -11,13 +11,19 @@
 }
 
 .swiper-body__btn {
-  width: 38px;
-  height: 38px;
-  border-radius: 4px;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
   border: 1px solid #E0E0E0;
   background-color: rgba(255, 255, 255, 0.7);
   cursor: pointer;
   transform: translate(0, -50%);
+  transition: border .3s ease-in-out;
+
+  &:hover {
+    // background-color: var(--light-color);
+    border: 1px solid #7b7b7b;
+  }
 
   &::before {
     content: '';
@@ -38,13 +44,13 @@
 }
 
 .swiper-body__btn-prev {
-  left: -19px;
+  left: -17px;
   right: auto;
   transform: rotate(180deg) translate(0, 50%);
 }
 
 .swiper-body__btn-next {
-  right: -19px;
+  right: -17px;
   left: auto;
 }
 
