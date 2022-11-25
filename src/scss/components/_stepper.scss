@@ -1,48 +1,50 @@
 .stepper {
-  // border: 1px solid rgb(156, 156, 156);
   display: inline-flex;
   align-items: center;
-  // max-width: 120px;
-  // width: 100%;
   width: 90px;
   height: 40px;
   user-select: none;
   position: relative;
-}
 
-.stepper__field {
-  height: 100%;
-  overflow: hidden;
-  display: inline-flex;
-  align-items: center;
-  width: 100%;
-  justify-content: center;
-}
+  &__field {
+    height: 100%;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
 
-.stepper__input {
-  border: none;
-  outline: none;
-  min-width: 2ex;
-  text-align: center;
-}
+  &__input {
+    border: none;
+    outline: none;
+    min-width: 2ex;
+    text-align: center;
+  }
 
-.stepper__btn {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  height: 100%;
-  top: 0;
-  cursor: pointer;
-  bottom: 0;
-  width: 20px;
-}
+  &__btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    height: 100%;
+    top: 0;
+    cursor: pointer;
+    bottom: 0;
+    width: 20px;
+  }
 
-.stepper__btn--up {
-  right: 0;
-}
+  &__btn--up {
+    right: 0;
+  }
 
-.stepper__btn--down {
-  left: 0;
+  &__btn--down {
+    left: 0;
+  }
+
+  &__icon {
+    width: 12px;
+    height: 12px;
+  }
 }
