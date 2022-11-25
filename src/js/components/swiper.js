@@ -8,8 +8,6 @@ new Swiper('.banner__main', {
     delay: 7000,
   },
 
-
-
   navigation: {
     nextEl: '.swiper-body__main .swiper-body__btn-next',
     prevEl: '.swiper-body__main .swiper-body__btn-prev',
