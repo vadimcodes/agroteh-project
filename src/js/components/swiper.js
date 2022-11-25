@@ -4,10 +4,11 @@ import Swiper from "swiper";
 new Swiper('.banner__main', {
   slidesPerView: 1,
   loop: true,
-  autoHeight: false,
-  // autoplay: {
-  //   delay: 7000,
-  // },
+  autoplay: {
+    delay: 7000,
+  },
+
+
 
   navigation: {
     nextEl: '.swiper-body__main .swiper-body__btn-next',
