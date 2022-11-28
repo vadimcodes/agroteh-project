@@ -31,9 +31,19 @@
     font-weight: 400;
   }
 
+  &__link {
+    display: block;
+    transition: color .15s ease-in-out;
+
+    &:hover {
+      color: var(--prim-color);
+    }
+  }
+
   &__descr {
     margin: 0;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
+    color: #6C6C6C;
   }
 
   &__info {
@@ -68,6 +78,17 @@
 
   &__btn {
     margin-right: 15px;
+    transition: background-color .15s ease-in-out;
+
+    &:hover {
+      background-color: #1d1d20;
+    }
+
+    // &--active {
+    //   background-color: var(--prim-color);
+    //   cursor: default;
+    //   opacity: .6;
+    // }
 
     // &--active {
     //   background-color: var(--prim-color);
