@@ -1,5 +1,5 @@
 .swiper .swiper-slide {
-  height: 100% !important;
+  // height: 100% !important;
 }
 
 // .swiper .banner__slide {
@@ -18,10 +18,9 @@
   background-color: rgba(255, 255, 255, 0.7);
   cursor: pointer;
   transform: translate(0, -50%);
-  transition: border .3s ease-in-out;
+  transition: border .2s ease-in-out;
 
   &:hover {
-    // background-color: var(--light-color);
     border: 1px solid #7b7b7b;
   }
 
