@@ -1,0 +1,22 @@
+.benefits {
+  margin-bottom: 90px;
+
+  &__list {
+  }
+
+  &__item {
+    padding-left: 70px;
+    grid-column: 3 span;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 4px;
+    font-weight: 500;
+  }
+
+  &__subtitle {
+    margin: 0;
+    color: #A4A4A4;
+  }
+}
