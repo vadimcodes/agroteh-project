@@ -66,6 +66,8 @@
                   class="order-delivery__input input-reset"
                   type="radio"
                   name="name"
+                  id="deliveryInput"
+                  checked
                 />
                 <span class="order-delivery__title">Доставка</span>
               </label>
@@ -88,7 +90,7 @@
             </div>
           </form>
         </div>
-        <div class="order__block order-block">
+        <div class="order__block order-block" id="deliveryBlock">
           <h3 class="order-block__title">Получатель</h3>
           <p class="order-block__subtitle">
             Данные необходимы для курьера и уведомлениях о статусе вашего заказа
@@ -157,6 +159,14 @@
               >
             </li>
           </ul>
+          <button class="order-info__wrapped btn-reset">
+            <span>Информация о товарах</span>
+            <svg class="order-info__arrow">
+              <use xlink:href="img/icons/arrow.svg#arrow"></use>
+            </svg>
+          </button>
+          <p class="order-info__name">Наименование товара:</p>
+          <ol class="order-info__list list-reset" id="orderDetail"></ol>
           <a class="btn-prim order-info__btn" href="#">Оформить заказ</a>
           <p class="order-info__descr">
             После оформления наш менеджер свяжется с вами для подтверждения
