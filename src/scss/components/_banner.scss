@@ -1,7 +1,61 @@
 .banner {
   margin-bottom: 45px;
+
+  &__main {
+
+    &-content {
+      display: inline-block;
+      padding: 40px 70px;
+      cursor: default;
+    }
+
+    &-title {
+      font-size: 20px;
+      // max-width: 445px;
+      margin-bottom: 14px;
+      line-height: 130%;
+      font-weight: 500;
+    }
+
+    &-descr {
+      margin: 0;
+      // max-width: 688px;
+      font-size: 15px;
+      line-height: 150%;
+      color: #242424;
+    }
+  }
+
   &__swiper {
-    height: 200px;
-    background-color: bisque;
+    // max-height: 220px;
+    background-color: rgb(219, 219, 219);
+    border-radius: 4px;
+  }
+
+  &__slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &--main1 {
+      background-image: url("../img/banner-main/banner1.png");
+    }
+
+    &--main2 {
+      background-image: url("../img/banner-main/banner2.png");
+    }
+
+    &--main3 {
+      background-image: url("../img/banner-main/banner3.png");
+    }
+
+    &--main4 {
+      background-image: url("../img/banner-main/banner4.png");
+    }
+
+    // &--second1 {
+    //   background-image: url("../img/banner-second/banner-second1.png");
+    //   height: 200px;
+    // }
   }
 }

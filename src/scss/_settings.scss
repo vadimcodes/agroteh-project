@@ -49,6 +49,7 @@ a {
 }
 
 .site-container {
+  @include footerToBottom;
   // overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
 }
 
@@ -147,6 +148,7 @@ a {
   color: var(--dark-color);
   text-align: center;
   line-height: var(--lh120);
+  letter-spacing: -0.4px;
 }
 
 .subtitle {

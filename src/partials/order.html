@@ -56,32 +56,36 @@
             Укажите вариант получения вашего заказа
           </p>
           <form
-            class="order-block__form order__way"
+            class="order-block__form order__delivery"
             action="telegram.php"
             method="post"
           >
-            <label class="order-block__label">
-              <input
-                class="order-block__input input-reset"
-                type="radio"
-                name="name"
-              />
-              <span class="order__way-title">Доставка</span>
-              <p class="order__way-subtitle">
+            <div class="order-delivery">
+              <label class="order-delivery__label">
+                <input
+                  class="order-delivery__input input-reset"
+                  type="radio"
+                  name="name"
+                />
+                <span class="order-delivery__title">Доставка</span>
+              </label>
+              <p class="order-delivery__subtitle">
                 Доставка по всей РФ осуществляется транспортными компаниями
               </p>
-            </label>
-            <label class="order-block__label">
-              <input
-                class="order-block__input input-reset"
-                type="radio"
-                name="name"
-              />
-              <span class="order__way-title">Самовывоз</span>
-              <p class="order__way-subtitle">
+            </div>
+            <div class="order-delivery">
+              <label class="order-delivery__label">
+                <input
+                  class="order-delivery__input input-reset"
+                  type="radio"
+                  name="name"
+                />
+                <span class="order-delivery__title">Самовывоз</span>
+              </label>
+              <p class="order-delivery__subtitle">
                 По адресу: г. Чебоксары, ул. Пристанционная, д. 3
               </p>
-            </label>
+            </div>
           </form>
         </div>
         <div class="order__block order-block">

@@ -1,15 +1,60 @@
-// .list-products {
-//   &__slide {
-//     height: 100%;
-//   }
-// }
-
-
-// .swiper-slide {
-//   height: 100%;
-// }
-
-
 .swiper .swiper-slide {
   height: 100% !important;
+}
+
+// .swiper .banner__slide {
+//   height: auto !important;
+// }
+
+.swiper-body {
+  position: relative;
+}
+
+.swiper-body__btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  border: 1px solid #E0E0E0;
+  background-color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transform: translate(0, -50%);
+  transition: border .2s ease-in-out;
+
+  &:hover {
+    border: 1px solid #7b7b7b;
+  }
+
+  &::before {
+    content: '';
+    background-image: url('/img/icons/arrow-slider.svg');
+    background-position: center;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.swiper-body__btn-prev {
+  left: -17px;
+  right: auto;
+  transform: rotate(180deg) translate(0, 50%);
+}
+
+.swiper-body__btn-next {
+  right: -17px;
+  left: auto;
+}
+
+.swiper-button-disabled {
+  opacity: .3;
+  cursor: default;
 }

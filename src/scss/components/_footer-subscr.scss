@@ -1,0 +1,49 @@
+.footer-subscr {
+
+  &__title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--lft-color);
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 18px;
+    color: #818181;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__input {
+    height: 40px;
+    border-radius: var(--br-4);
+    padding: 4px 14px;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  &__accept {
+  }
+
+  &__btn {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  &__click {
+    font-size: 12px;
+    color: #818181;
+  }
+
+  &__politics {
+    font-size: 12px;
+    color: #BCBCBC;
+    text-decoration: underline;
+  }
+}

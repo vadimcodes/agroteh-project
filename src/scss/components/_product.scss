@@ -26,14 +26,24 @@
 
   &__title {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 14px;
     font-weight: 400;
   }
 
+  &__link {
+    display: block;
+    transition: color .15s ease-in-out;
+
+    &:hover {
+      color: var(--prim-color);
+    }
+  }
+
   &__descr {
     margin: 0;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
+    color: #6C6C6C;
   }
 
   &__info {
@@ -48,7 +58,7 @@
   &__value {
     color: #B1B1B1;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     display: block;
 
     &::after {
@@ -68,16 +78,22 @@
 
   &__btn {
     margin-right: 15px;
-    // border: 1px solid #000;
-    // margin-right: 10px;
-    // padding: 14px 12px;
-    // border-radius: 4px;
-    // color: #000;
-    // cursor: pointer;
+    transition: background-color .15s ease-in-out;
 
-    // &:hover {
-    //   color: #6078f1;
-    //   transition: color 0.3s ease-in-out;
+    &:hover {
+      background-color: #1d1d20;
+    }
+
+    // &--active {
+    //   background-color: var(--prim-color);
+    //   cursor: default;
+    //   opacity: .6;
+    // }
+
+    // &--active {
+    //   background-color: var(--prim-color);
+    //   cursor: default;
+    //   opacity: .6;
     // }
   }
 }
