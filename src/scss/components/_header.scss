@@ -96,10 +96,12 @@
     border-radius: 4px;
     width: 22px;
     height: 22px;
+
     transition: border 0.1s ease-in-out;
 
     &:hover,
     &:focus {
+
       border: 2px solid #636363;
     }
   }
