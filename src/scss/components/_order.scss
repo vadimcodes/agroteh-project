@@ -1,6 +1,8 @@
 .order {
 
-  &__title {}
+  &__title {
+  }
+
 
   &__body {}
 
@@ -10,7 +12,7 @@
 
   &__block {
     padding: 50px 60px;
-    background-color: #F2F3F5;
+    background-color: #f2f3f5;
     border-radius: var(--br-8);
 
     &:last-child {
@@ -39,8 +41,6 @@
 }
 
 .order-block {
-
-
   &__title {
     margin: 0;
     margin-bottom: 8px;
@@ -84,7 +84,6 @@
 }
 
 .order-info {
-
   &__data {
     border-radius: var(--br-8);
     display: flex;
@@ -103,7 +102,6 @@
 
   &__list {
     margin-bottom: 15px;
-    border-bottom: 1px solid #DEDDDD;
   }
 
   &__item {
@@ -117,7 +115,7 @@
   }
 
   &__text {
-    color: #9D9D9D;
+    color: #9d9d9d;
   }
 
   &__value {
@@ -133,7 +131,75 @@
   &__descr {
     margin: 0;
     font-size: 12px;
-    color: #9D9D9D;
+    color: #9d9d9d;
+  }
+
+  &__wrapped {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--prim-color);
+    margin-bottom: 25px;
+    &.active svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__name {
+    margin-bottom: 20px;
+    color: #757575;
+  }
+
+  &__arrow {
+    width: 10px;
+    height: 10px;
+    vertical-align: middle;
+  }
+}
+
+.order-delivery {
+  display: inline-flex;
+  flex-direction: column;
+  background-color: var(--light-color);
+  padding: 20px 25px;
+  max-width: 48%;
+  border-radius: var(--br-4);
+
+  &__label {
+    display: flex;
+    margin-bottom: 10px;
+    border-radius: var(--br-4);
+    cursor: pointer;
+  }
+
+  &__input {
+    margin-right: 6px;
+  }
+
+  &__title {
+    font-weight: 500;
+    margin: 0;
+  }
+
+  &__subtitle {
+    margin: 0;
+  }
+}
+
+#orderDetail {
+  border-bottom: 1px solid #dedddd;
+  overflow: hidden;
+  transition: 0.2s linear;
+  height: 0;
+  &.active {
+    height: auto;
+  }
+}
+
+#deliveryBlock {
+  display: none;
+  &.active {
+    display: block;
   }
 }
 
