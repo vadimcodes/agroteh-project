@@ -121,52 +121,57 @@ window.deleteCartItem = deleteCartItem;
 
 const renderCartItems = () => {
   cartContainer.innerHTML = "";
-  cart.forEach(({ id, name, price, count, img }) => {
-    cartContainer.insertAdjacentHTML(
-      "afterbegin",
-      `<div class="cart__product cart-product" data-cartItem='${id}'>
-    <a class="cart-product__img" href="#">
-      <picture class="cart-product__pic">
-        <source srcset="${img}" type="image/webp">
-        <img loading="lazy" src="${img}" class="image" width="140" height="140"
-          alt="Изображение товара">
-      </picture>
-      <a class="cart-product__title" href="#">${name}</a>
-      <div class="cart-product__action">
-          <button class="cart-product__del btn-reset" onclick="deleteCartItem(${id})">
-            <span>Удалить</span>
-          </button>
-          <div class="cart-product__control">
-            <div class="stepper">
-              <label class="stepper__field">
-                <input type="number" value="${count}" maxlength="3" class="stepper__input input-reset" oninput="changeCartCount(event, 'input', 'controlState')">
-              </label>
-              <div class="stepper__btns">
-                <button class="stepper__btn stepper__btn--down stepper__btn--disabled btn-reset" aria-label="Уменьшить количество" onclick="changeCartCount(event, 'minus', 'controlState')">
-                  <svg width="14" height="14" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M4 13C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11L20 11C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13L4 13Z"
-                      fill="black" />
-                  </svg>
-                </button>
-                <button class="stepper__btn stepper__btn--up btn-reset" aria-label="Увеличить количество" onclick="changeCartCount(event, 'plus', 'controlState')">
-                  <svg width="14" height="14" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M11.0019 20C11.0019 20.5523 11.4497 21 12.0019 21C12.5542 21 13.0019 20.5523 13.0019 20L13.0019 12.9999L20.0019 12.9999C20.5542 12.9999 21.0019 12.5522 21.0019 11.9999C21.0019 11.4476 20.5542 10.9999 20.0019 10.9999H13.0019L13.0019 4C13.0019 3.44772 12.5542 3 12.0019 3C11.4497 3 11.0019 3.44772 11.0019 4V10.9999H4.00195C3.44967 10.9999 3.00195 11.4476 3.00195 11.9999C3.00195 12.5522 3.44967 12.9999 4.00195 12.9999H11.0019V20Z"
-                      fill="black" />
-                  </svg>
-                </button>
+
+  if (cart.length) {
+    cart.forEach(({ id, name, price, count, img }) => {
+      cartContainer.insertAdjacentHTML(
+        "beforeend",
+        `<div class="cart__product cart-product" data-cartItem='${id}'>
+      <a class="cart-product__img" href="#">
+        <picture class="cart-product__pic">
+          <source srcset="${img}" type="image/webp">
+          <img loading="lazy" src="${img}" class="image" width="140" height="140"
+            alt="Изображение товара">
+        </picture>
+        <a class="cart-product__title" href="#">${name}</a>
+        <div class="cart-product__action">
+            <button class="cart-product__del btn-reset" onclick="deleteCartItem(${id})">
+              <span>Удалить</span>
+            </button>
+            <div class="cart-product__control">
+              <div class="stepper">
+                <label class="stepper__field">
+                  <input type="number" value="${count}" maxlength="3" class="stepper__input input-reset" oninput="changeCartCount(event, 'input', 'controlState')">
+                </label>
+                <div class="stepper__btns">
+                  <button class="stepper__btn stepper__btn--down stepper__btn--disabled btn-reset" aria-label="Уменьшить количество" onclick="changeCartCount(event, 'minus', 'controlState')">
+                    <svg width="14" height="14" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M4 13C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11L20 11C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13L4 13Z"
+                        fill="black" />
+                    </svg>
+                  </button>
+                  <button class="stepper__btn stepper__btn--up btn-reset" aria-label="Увеличить количество" onclick="changeCartCount(event, 'plus', 'controlState')">
+                    <svg width="14" height="14" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.0019 20C11.0019 20.5523 11.4497 21 12.0019 21C12.5542 21 13.0019 20.5523 13.0019 20L13.0019 12.9999L20.0019 12.9999C20.5542 12.9999 21.0019 12.5522 21.0019 11.9999C21.0019 11.4476 20.5542 10.9999 20.0019 10.9999H13.0019L13.0019 4C13.0019 3.44772 12.5542 3 12.0019 3C11.4497 3 11.0019 3.44772 11.0019 4V10.9999H4.00195C3.44967 10.9999 3.00195 11.4476 3.00195 11.9999C3.00195 12.5522 3.44967 12.9999 4.00195 12.9999H11.0019V20Z"
+                        fill="black" />
+                    </svg>
+                  </button>
+                </div>
               </div>
+              <p class="cart-product__price">
+                <span class="cart-product__current">${price}</span><span class="cart-product__unit"> ₽/шт.</span>
+              </p>
             </div>
-            <p class="cart-product__price">
-              <span class="cart-product__current">${price}</span><span class="cart-product__unit"> ₽/шт.</span>
-            </p>
-          </div>
-      </div>
-    </a>
-   </div>`
-    );
-  });
+        </div>
+      </a>
+     </div>`
+      );
+    });
+  } else {
+    cartContainer.innerHTML = "Корзина пустая";
+  }
 
   orderCount.innerText = cart.length;
   orderTotal.innerText = cart.reduce(
