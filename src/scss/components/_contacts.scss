@@ -1,9 +1,13 @@
 .contacts {
   margin-bottom: 80px;
 
-  &__title {}
+  &__title {
+    margin-top: 50px;
+  }
 
-  &__subtitle {}
+  &__subtitle {
+    margin-bottom: 50px;
+  }
 
   &__inner {
     display: flex;
