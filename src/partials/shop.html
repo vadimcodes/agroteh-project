@@ -1,6 +1,6 @@
 <section class="shop">
   <div class="container">
-    <h2 class="title shop__title">Магазин</h2>
+    <h2 class="title shop__title page-title">Магазин</h2>
     <div class="shop__inner grid">
       <div class="shop__filter filter">
         <div class="filter__inner">
@@ -8,6 +8,17 @@
         </div>
       </div>
         <div class="shop__products">
+          <!-- переключатели строка-стобец -->
+          <div class="shop__products__switch switch-shop">
+            <ul class="list-reset switch-shop__list">
+              <li class="switch-shop__item">
+                <button class="btn-reset switch-shop__btn">Строка</button>
+              </li>
+              <li class="switch-shop__item">
+                <button class="btn-reset switch-shop__btn">Столбец</button>
+              </li>
+            </ul>
+          </div>
           <article class="product product--row">
             <a class="product__image product__image--row" href="#">
               <div class="product__switch image-switch">
