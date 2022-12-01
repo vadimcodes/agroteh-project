@@ -50,6 +50,14 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
 a {
   text-decoration: none;
   color: #000;
