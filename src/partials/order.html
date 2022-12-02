@@ -1,12 +1,13 @@
 <section class="order">
   <div class="container">
-    <h2 class="order__title title">Оформление заказа</h2>
+    <h2 class="order__title title page-title">Оформление заказа</h2>
     <div class="order__body grid">
       <div class="order__data">
         <div class="order__block order-block">
           <h3 class="order-block__title">Получатель</h3>
           <p class="order-block__subtitle">
-            Данные необходимы для курьера и уведомлениях о статусе вашего заказа
+            Данные необходимы для доставки и уведомлениях о статусе вашего
+            заказа
           </p>
           <form
             class="order-block__form grid"
@@ -44,7 +45,7 @@
                 class="order-block__input input-reset"
                 type="tel"
                 name="name"
-                placeholder="Телефон"
+                placeholder="Телефон*"
               />
             </label>
           </form>
@@ -93,9 +94,10 @@
           </form>
         </div>
         <div class="order__block order-block" id="deliveryBlock">
-          <h3 class="order-block__title">Получатель</h3>
+          <h3 class="order-block__title">Адрес доставки</h3>
           <p class="order-block__subtitle">
-            Данные необходимы для курьера и уведомлениях о статусе вашего заказа
+            Укажите точный адрес доставки, дополнительную информацию можно
+            указать в комментариях
           </p>
           <form
             class="order-block__form grid"
@@ -116,7 +118,7 @@
                 class="order-block__input input-reset"
                 type="text"
                 name="name"
-                placeholder="Область и город*"
+                placeholder="Область, город*"
                 required
               />
             </label>
@@ -133,12 +135,12 @@
                 class="order-block__input input-reset"
                 type="tel"
                 name="name"
-                placeholder="Дом, строение"
+                placeholder="Дом, строение, квартиира, офис"
               />
             </label>
             <textarea
               class="order-block__comment input-reset"
-              placeholder="Коментарии к доставке"
+              placeholder="Комментарии к доставке или дополнительная информация"
               name=""
               rows="7"
             ></textarea>
@@ -168,8 +170,10 @@
               <use xlink:href="img/icons/arrow.svg#arrow"></use>
             </svg>
           </button>
-          <p class="order-info__name">Наименование товара:</p>
-          <ol class="order-info__list list-reset" id="orderDetail"></ol>
+          <!-- <p class="order-info__name">Наименование товара:</p> -->
+          <ol class="order-info__list list-reset" id="orderDetail">
+            <p class="order-info__name">Наименование товара:</p>
+          </ol>
           <a class="btn-prim order-info__btn" href="#">Оформить заказ</a>
           <p class="order-info__descr">
             После оформления наш менеджер свяжется с вами для подтверждения

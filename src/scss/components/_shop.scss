@@ -2,10 +2,11 @@
   margin-bottom: 50px;
 
   &__title {
-    margin-bottom: 80px;
+    // margin-bottom: 80px;
   }
 
-  &__inner {}
+  &__inner {
+  }
 
   &__filter {
     grid-column: 3 span;
@@ -14,9 +15,12 @@
 
   &__products {
     grid-column: 9 span;
+
+    &-inner--row {
+      grid-column: 4 span;
+    }
   }
 }
-
 
 .product--row {
   flex-direction: row;
@@ -25,6 +29,7 @@
   height: auto;
   position: relative;
   padding: 10px 0;
+  grid-column: 12 span;
 
   &::after {
     content: "";
@@ -74,12 +79,35 @@
 }
 
 .filter {
-
   &__inner {
     border-radius: var(--br-4);
     min-height: 300px;
     padding: 40px 20px;
     margin-top: 10px;
-    box-shadow: 16px 26px 12px rgba(128, 128, 128, 0.01), 9px 15px 10px rgba(128, 128, 128, 0.05), 4px 6px 8px rgba(128, 128, 128, 0.09), 1px 2px 4px rgba(128, 128, 128, 0.1), 0px 0px 0px rgba(128, 128, 128, 0.1), -14px -19px 9px rgba(128, 128, 128, 0.01), -8px -11px 8px rgba(128, 128, 128, 0.02), -4px -5px 6px rgba(128, 128, 128, 0.03), -1px -1px 3px rgba(128, 128, 128, 0.04), 0px 0px 0px rgba(128, 128, 128, 0.04);;
+    box-shadow: 16px 26px 12px rgba(128, 128, 128, 0.01),
+      9px 15px 10px rgba(128, 128, 128, 0.05),
+      4px 6px 8px rgba(128, 128, 128, 0.09),
+      1px 2px 4px rgba(128, 128, 128, 0.1), 0px 0px 0px rgba(128, 128, 128, 0.1),
+      -14px -19px 9px rgba(128, 128, 128, 0.01),
+      -8px -11px 8px rgba(128, 128, 128, 0.02),
+      -4px -5px 6px rgba(128, 128, 128, 0.03),
+      -1px -1px 3px rgba(128, 128, 128, 0.04),
+      0px 0px 0px rgba(128, 128, 128, 0.04);
+  }
+}
+
+.switch-shop {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 14px;
+    }
   }
 }

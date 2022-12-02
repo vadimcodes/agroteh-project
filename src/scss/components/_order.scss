@@ -1,10 +1,9 @@
 .order {
-
   &__title {
   }
 
-
-  &__body {}
+  &__body {
+  }
 
   &__data {
     grid-column: 8 span;
@@ -220,7 +219,6 @@
 
   &__input {
     margin-right: 6px;
-
   }
 
   &__title {
