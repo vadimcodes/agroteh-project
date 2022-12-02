@@ -23,7 +23,8 @@
     flex-grow: 1;
   }
 
-  &__naim {}
+  &__naim {
+  }
 
   &__title {
     margin: 0;
@@ -34,7 +35,7 @@
 
   &__link {
     display: block;
-    transition: color .15s ease-in-out;
+    transition: color 0.15s ease-in-out;
 
     &:hover {
       color: var(--prim-color);
@@ -44,7 +45,7 @@
   &__descr {
     margin: 0;
     // margin-bottom: 30px;
-    color: #6C6C6C;
+    color: #6c6c6c;
   }
 
   &__info {
@@ -54,21 +55,22 @@
     width: 100%;
   }
 
-  &__price {}
+  &__price {
+  }
 
   &__value {
-    color: #B1B1B1;
+    color: #b1b1b1;
     position: relative;
     margin-bottom: 15px;
     display: block;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 22px;
       left: 0;
       width: 100%;
-      border-bottom: 1px solid #E3E3E3;
+      border-bottom: 1px solid #e3e3e3;
     }
   }
 
@@ -79,17 +81,18 @@
 
   &__btn {
     margin-right: 15px;
-    transition: background-color .15s ease-in-out;
+    transition: background-color 0.15s ease-in-out;
 
     &:hover {
       background-color: #1d1d20;
     }
 
-    // &--active {
-    //   background-color: var(--prim-color);
-    //   cursor: default;
-    //   opacity: .6;
-    // }
+    &--active {
+      background-color: var(--prim-color);
+      pointer-events: none;
+      cursor: not-allowed;
+      opacity: 0.4;
+    }
 
     // &--active {
     //   background-color: var(--prim-color);

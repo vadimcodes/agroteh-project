@@ -34,6 +34,7 @@ const renderCartQuantity = () => {
 cartBtns.forEach((btn, index) =>
   btn.addEventListener("click", (e) => {
     e.preventDefault();
+    e.currentTarget.classList.add("product__btn--active");
     const product = {
       id: index,
       name: productNames[index].innerText,

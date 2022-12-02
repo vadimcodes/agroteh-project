@@ -20,7 +20,7 @@
 
   &__info {
     width: 40%;
-    background-color: #F7F8F9;
+    background-color: #f7f8f9;
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
     padding: 50px 30px;
@@ -63,8 +63,8 @@
 }
 
 .contacts-info {
-
-  &__list {}
+  &__list {
+  }
 
   &__item {
     display: flex;
@@ -85,11 +85,14 @@
     font-weight: 500;
   }
 
-  &__text {}
+  &__text {
+  }
 
-  &__link {}
+  &__link {
+  }
 
-  &__social {}
+  &__social {
+  }
 
   &__graph {
     margin: 0;
@@ -104,7 +107,6 @@
   display: flex;
 
   &__item {
-
     &:not(:last-child) {
       margin-right: 20px;
     }
