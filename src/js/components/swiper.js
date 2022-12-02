@@ -20,10 +20,25 @@ new Swiper('.products__slider-actual', {
   spaceBetween: 30,
   autoHeight: true,
 
-  navigation: {
-    nextEl: '.swiper-body__actual .swiper-body__btn-next',
-    prevEl: '.swiper-body__actual .swiper-body__btn-prev',
+  breakpoints: {
+    220: {
+      slidesPerView: 1,
+    },
+    320: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    }
   },
+
+  navigation: {
+  nextEl: '.swiper-body__actual .swiper-body__btn-next',
+  prevEl: '.swiper-body__actual .swiper-body__btn-prev',
+},
 });
 
 // слайдер на главной странице
@@ -43,6 +58,21 @@ new Swiper('.products__slider-new', {
   slidesPerView: 4,
   spaceBetween: 30,
   autoHeight: true,
+
+  breakpoints: {
+    220: {
+      slidesPerView: 1,
+    },
+    320: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    }
+  },
 
   navigation: {
     nextEl: '.swiper-body__new .swiper-body__btn-next',
