@@ -6,20 +6,47 @@
         <div class="order__block order-block">
           <h3 class="order-block__title">Получатель</h3>
           <p class="order-block__subtitle">
-            Данные необходимы для доставки и уведомлениях о статусе вашего заказа
+            Данные необходимы для доставки и уведомлениях о статусе вашего
+            заказа
           </p>
-          <form class="order-block__form grid" action="telegram.php" method="post">
+          <form
+            class="order-block__form grid"
+            action="telegram.php"
+            method="post"
+          >
             <label class="order-block__label">
-              <input class="order-block__input input-reset" type="text" name="name" placeholder="Фамилия*" required />
+              <input
+                class="order-block__input input-reset"
+                type="text"
+                name="name"
+                placeholder="Фамилия*"
+                required
+              />
             </label>
             <label class="order-block__label">
-              <input class="order-block__input input-reset" type="text" name="name" placeholder="Имя*" required />
+              <input
+                class="order-block__input input-reset"
+                type="text"
+                name="name"
+                placeholder="Имя*"
+                required
+              />
             </label>
             <label class="order-block__label">
-              <input class="order-block__input input-reset" type="email" name="name" placeholder="E-mail" />
+              <input
+                class="order-block__input input-reset"
+                type="email"
+                name="name"
+                placeholder="E-mail"
+              />
             </label>
             <label class="order-block__label">
-              <input class="order-block__input input-reset" type="tel" name="name" placeholder="Телефон*" />
+              <input
+                class="order-block__input input-reset"
+                type="tel"
+                name="name"
+                placeholder="Телефон*"
+              />
             </label>
           </form>
           <p class="order__note">* - Реквизиты обязательны к заполнению</p>
@@ -29,11 +56,20 @@
           <p class="order-block__subtitle">
             Укажите вариант получения вашего заказа
           </p>
-
-          <form class="order-block__form order__delivery" action="telegram.php" method="post">
+          <form
+            class="order-block__form order__delivery"
+            action="telegram.php"
+            method="post"
+          >
             <div class="order-delivery">
               <label class="order-delivery__label">
-                <input class="order-delivery__input input-reset" type="radio" name="name" id="deliveryInput" checked />
+                <input
+                  class="order-delivery__input input-reset"
+                  type="radio"
+                  name="name"
+                  id="deliveryInput"
+                  checked
+                />
                 <span class="order-delivery__title">Доставка</span>
               </label>
               <p class="order-delivery__subtitle">
@@ -42,7 +78,11 @@
             </div>
             <div class="order-delivery">
               <label class="order-delivery__label">
-                <input class="order-delivery__input input-reset" type="radio" name="name" />
+                <input
+                  class="order-delivery__input input-reset"
+                  type="radio"
+                  name="name"
+                />
                 <span class="order-delivery__title">Самовывоз</span>
               </label>
               <p class="order-delivery__subtitle">
@@ -55,18 +95,34 @@
         <div class="order__block order-block" id="deliveryBlock">
           <h3 class="order-block__title">Адрес доставки</h3>
           <p class="order-block__subtitle">
-            Укажите точный адрес доставки, дополнительную информацию можно указать в комментариях
+            Укажите точный адрес доставки, дополнительную информацию можно
+            указать в комментариях
           </p>
-          <form class="order-block__form grid" action="telegram.php" method="post">
+          <form
+            class="order-block__form grid"
+            action="telegram.php"
+            method="post"
+          >
             <label class="order-block__label">
-              <input class="order-block__input input-reset" type="number" name="name" placeholder="Индекс*" required />
+              <input
+                class="order-block__input input-reset"
+                type="number"
+                name="name"
+                placeholder="Индекс*"
+                required
+              />
             </label>
             <label class="order-block__label">
               <input class="order-block__input input-reset" type="text" name="name" placeholder="Область, город*"
                 required />
             </label>
             <label class="order-block__label">
-              <input class="order-block__input input-reset" type="email" name="name" placeholder="Улица*" />
+              <input
+                class="order-block__input input-reset"
+                type="email"
+                name="name"
+                placeholder="Улица*"
+              />
             </label>
             <label class="order-block__label">
               <input class="order-block__input input-reset" type="tel" name="name"
