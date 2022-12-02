@@ -111,3 +111,19 @@
     }
   }
 }
+
+.switch-shop {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 14px;
+    }
+  }
+}

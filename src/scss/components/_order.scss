@@ -2,8 +2,10 @@
   &__title {
   }
 
+
   &__body {
   }
+
 
   &__data {
     grid-column: 8 span;
@@ -199,34 +201,5 @@
   display: none;
   &.active {
     display: block;
-  }
-}
-
-.order-delivery {
-  display: inline-flex;
-  flex-direction: column;
-  background-color: var(--light-color);
-  padding: 20px 25px;
-  max-width: 48%;
-  border-radius: var(--br-4);
-
-  &__label {
-    display: flex;
-    margin-bottom: 10px;
-    border-radius: var(--br-4);
-    cursor: pointer;
-  }
-
-  &__input {
-    margin-right: 6px;
-  }
-
-  &__title {
-    font-weight: 500;
-    margin: 0;
-  }
-
-  &__subtitle {
-    margin: 0;
   }
 }
