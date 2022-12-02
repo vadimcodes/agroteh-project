@@ -185,4 +185,9 @@ a {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 30px;
+
+  @include mobile {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
 }
