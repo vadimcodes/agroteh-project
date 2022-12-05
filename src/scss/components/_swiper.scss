@@ -61,3 +61,22 @@
   opacity: .3;
   cursor: default;
 }
+
+.image-mini-slider__slide {
+  opacity: .2;
+}
+
+.image-mini-slider__slide .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.goods__mini-slide {
+  cursor: pointer;
+}
+
+.tabs__swiper {
+  min-width: 0;
+}
+
+
+

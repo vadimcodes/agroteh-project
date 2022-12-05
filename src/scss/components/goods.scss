@@ -1,0 +1,126 @@
+.goods {
+
+  &__title {}
+
+  &__section {}
+
+  &__swiper {}
+
+  &__wrapper {}
+
+  &__slide {}
+
+  &__slide-pic {}
+
+  &__mini-swiper {}
+
+  &__mini-wrapper {}
+
+  &__mini-slide {}
+
+  &__descr {}
+
+  &__control {
+    grid-column: 3 span;
+  }
+}
+
+.tabs {
+
+  &__nav {
+    padding: 14px;
+    margin-bottom: 30px;
+    box-shadow: 28px 18px 13px rgba(128, 128, 128, 0.01), 16px 10px 11px rgba(128, 128, 128, 0.02), 7px 5px 8px rgba(128, 128, 128, 0.03), 2px 1px 5px rgba(128, 128, 128, 0.04), 0px 0px 0px rgba(128, 128, 128, 0.04);
+    border-radius: 4px;
+  }
+
+  &__nav-item {
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__nav-btn {
+    color: rgb(149, 149, 149);
+
+    &--active {
+      color: #000;
+    }
+
+    &:focus {
+      color: #000;
+      background-color: transparent;
+    }
+  }
+
+  &__content {
+    grid-column: 9 span;
+
+
+  }
+
+  &__panel {
+
+    &--active {
+      grid-column: 9 span;
+    }
+  }
+
+  &__goods {}
+
+  &__swiper {
+    grid-column: 6 span;
+  }
+}
+
+.goods-descr {
+  grid-column: 6 span;
+
+  &__block {
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  &__value {
+    flex-shrink: 0;
+    font-weight: 500;
+  }
+
+  &__list {
+    margin-right: 70px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__naim {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    color: rgb(77, 77, 77);
+
+    &::after {
+      border-bottom: 1px dashed #c3c3c3;
+      content: "";
+      flex: 1;
+      order: 1;
+      margin: 0 4px;
+      display: flex;
+      height: 17px;
+    }
+  }
+}
