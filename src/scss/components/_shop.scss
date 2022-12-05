@@ -5,16 +5,31 @@
     // margin-bottom: 80px;
   }
 
-  &__inner {
-  }
+  &__inner {}
 
   &__filter {
     grid-column: 3 span;
     position: relative;
+
+    @include tablet {
+      grid-column: 12 span;
+    }
+
+    @include mobile {
+      grid-column: 4 span;
+    }
   }
 
   &__products {
     grid-column: 9 span;
+
+    @include tablet {
+      grid-column: 12 span;
+    }
+
+    @include mobile {
+      grid-column: 4 span;
+    }
 
     &-inner--row {
       grid-column: 4 span;
@@ -41,6 +56,11 @@
     height: 1px;
     background-color: #dddddd;
   }
+
+  @include mobile {
+    grid-column: 2 span;
+    flex-direction: column;
+  }
 }
 
 .product__image--row {
@@ -48,21 +68,38 @@
   margin: 0;
   width: 100%;
   max-width: 220px;
+
+  @include mobile {
+    height: 145px;
+  }
 }
 
 .product__data--row {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  @include mobile {
+    flex-direction: column;
+  }
 }
 
 .product__naim--row {
   padding: 0 40px;
+
+  @include mobile {
+    padding: 0;
+  }
 }
 
 .product__info--row {
   align-items: flex-end;
   width: auto;
+
+  @include mobile {
+    align-items: flex-start;
+    width: 100%;
+  }
 }
 
 .product__control--row {
@@ -81,7 +118,6 @@
 .filter {
   &__inner {
     border-radius: var(--br-4);
-    min-height: 300px;
     padding: 40px 20px;
     margin-top: 10px;
     box-shadow: 16px 26px 12px rgba(128, 128, 128, 0.01),
@@ -96,26 +132,38 @@
   }
 }
 
+// .switch-shop {
+//   display: flex;
+//   justify-content: flex-end;
+//   margin-bottom: 10px;
+
+//   &__list {
+//     display: flex;
+//   }
+
+//   &__item {
+//     &:not(:last-child) {
+//       margin-right: 14px;
+//     }
+//   }
+// }
+
 .switch-shop {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 10px;
 
-  &__list {
-    display: flex;
+  @include tablet {
+    justify-content: space-between;
   }
 
-  &__item {
-    &:not(:last-child) {
-      margin-right: 14px;
+  &__filtr {
+    display: none;
+
+    @include tablet {
+      display: block;
     }
   }
-}
-
-.switch-shop {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 10px;
 
   &__list {
     display: flex;
@@ -124,7 +172,12 @@
   &__item {
     &:not(:last-child) {
       margin-right: 6px;
+
     }
+  }
+
+    }
+
   }
 
   &__btn {
