@@ -9,6 +9,14 @@
 
   &__data {
     grid-column: 8 span;
+
+    @include tablet {
+      grid-column: 12 span;
+    }
+
+    @include mobile {
+      grid-column: 4 span;
+    }
   }
 
   &__block {
@@ -23,6 +31,10 @@
     &:not(:last-child) {
       margin-bottom: 30px;
     }
+
+    @include mobile {
+      padding: 30px 20px;
+    }
   }
 
   &__note {
@@ -34,10 +46,23 @@
   &__delivery {
     display: flex;
     justify-content: space-between;
+
+    @include small-tablet {
+      flex-direction: column;
+    }
   }
 
   &__info {
     grid-column: 10/3 span;
+
+    @include tablet {
+      grid-column: 12 span;
+      margin-bottom: 40px;
+    }
+
+    @include mobile {
+      grid-column: 4 span;
+    }
   }
 }
 
@@ -63,6 +88,14 @@
   &__label {
     display: flex;
     grid-column: 6 span;
+
+    @include small-tablet {
+      grid-column: 12 span;
+    }
+
+    @include mobile {
+      grid-column: 4 span;
+    }
   }
 
   &__input {
@@ -81,6 +114,10 @@
     padding: 6px 12px;
     border-radius: var(--br-4);
     resize: none;
+
+    @include mobile {
+      grid-column: 4 span;
+    }
   }
 }
 
@@ -165,6 +202,10 @@
   padding: 20px 25px;
   max-width: 48%;
   border-radius: var(--br-4);
+
+  @include small-tablet {
+    max-width: 100%;
+  }
 
   &__label {
     display: flex;
