@@ -36,9 +36,9 @@ new Swiper('.products__slider-actual', {
   },
 
   navigation: {
-  nextEl: '.swiper-body__actual .swiper-body__btn-next',
-  prevEl: '.swiper-body__actual .swiper-body__btn-prev',
-},
+    nextEl: '.swiper-body__actual .swiper-body__btn-next',
+    prevEl: '.swiper-body__actual .swiper-body__btn-prev',
+  },
 });
 
 // слайдер на главной странице
@@ -78,5 +78,22 @@ new Swiper('.products__slider-new', {
     nextEl: '.swiper-body__new .swiper-body__btn-next',
     prevEl: '.swiper-body__new .swiper-body__btn-prev',
   },
+});
+
+// слайдер на странице товары
+new Swiper('.goods__swiper', {
+  slidesPerView: 1,
+  loop: true,
+  // autoHeight: true,
+  // autoplay: {
+  //   delay: 10000,
+  // },
+  thumbs: {
+    swiper: {
+      el: ".goods__mini-swiper",
+      slidesPerView: 5,
+      spaceBetween: 10,
+    }
+  }
 });
 
