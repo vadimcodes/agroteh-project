@@ -1,19 +1,37 @@
-/* стили карточка товара */
-
 .product {
   display: flex;
   flex-direction: column;
-  max-width: 320px;
   background-color: #fff;
   height: 100%;
   grid-column: 4 span;
+
+  // @include small-tablet {
+  //   grid-column: 6 span;
+  // }
+
+  // @include mobile {
+  //   grid-column: 2 span;
+  // }
 
   &__image {
     margin-bottom: 22px;
     position: relative;
     overflow: hidden;
     display: block;
-    height: 280px;
+    // height: 280px;
+    height: 240px;
+
+    &:hover ~ .product__data .product__link {
+      color: var(--prim-color);
+    }
+
+    @include small-tablet {
+      height: 224px;
+    }
+
+    @include mobile {
+      height: 200px;
+    }
   }
 
   &__data {
@@ -44,8 +62,15 @@
 
   &__descr {
     margin: 0;
-    // margin-bottom: 30px;
+    margin-bottom: 20px;
     color: #6c6c6c;
+
+    &--row {
+      margin: 0;
+    }
+    @include mobile {
+      display: none;
+    }
   }
 
   &__info {
@@ -77,6 +102,11 @@
   &__control {
     display: flex;
     align-items: center;
+
+    @include mobile {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
   }
 
   &__btn {

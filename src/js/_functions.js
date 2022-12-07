@@ -34,8 +34,8 @@
 // const modal = new GraphModal();
 
 // Реализация табов
-// import GraphTabs from 'graph-tabs';
-// const tabs = new GraphTabs('tab');
+import GraphTabs from 'graph-tabs';
+const tabs = new GraphTabs('tab');
 
 // Получение высоты шапки сайта (не забудьте вызвать функцию)
 // import { getHeaderHeight } from './functions/header-height';
@@ -50,8 +50,8 @@
 // });
 
 // Подключение свайпера
-import Swiper, { Navigation, Pagination, Autoplay } from "swiper";
-Swiper.use([Navigation, Pagination, Autoplay]);
+import Swiper, { Navigation, Pagination, Autoplay, Thumbs } from "swiper";
+Swiper.use([Navigation, Pagination, Autoplay, Thumbs]);
 // const swiper = new Swiper(el, {
 // //   slidesPerView: 'auto',
 // });

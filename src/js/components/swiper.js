@@ -20,6 +20,21 @@ new Swiper('.products__slider-actual', {
   spaceBetween: 30,
   autoHeight: true,
 
+  breakpoints: {
+    220: {
+      slidesPerView: 1,
+    },
+    320: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    }
+  },
+
   navigation: {
     nextEl: '.swiper-body__actual .swiper-body__btn-next',
     prevEl: '.swiper-body__actual .swiper-body__btn-prev',
@@ -44,9 +59,41 @@ new Swiper('.products__slider-new', {
   spaceBetween: 30,
   autoHeight: true,
 
+  breakpoints: {
+    220: {
+      slidesPerView: 1,
+    },
+    320: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    }
+  },
+
   navigation: {
     nextEl: '.swiper-body__new .swiper-body__btn-next',
     prevEl: '.swiper-body__new .swiper-body__btn-prev',
   },
+});
+
+// слайдер на странице товары
+new Swiper('.goods__swiper', {
+  slidesPerView: 1,
+  loop: true,
+  // autoHeight: true,
+  // autoplay: {
+  //   delay: 10000,
+  // },
+  thumbs: {
+    swiper: {
+      el: ".goods__mini-swiper",
+      slidesPerView: 5,
+      spaceBetween: 10,
+    }
+  }
 });
 

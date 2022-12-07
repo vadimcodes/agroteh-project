@@ -3,12 +3,21 @@
   padding: 80px 0;
   margin-bottom: 80px;
 
+
   &__inner {
     align-items: center;
   }
 
   &__info {
     grid-column: 6 span;
+
+    @include small-tablet {
+      grid-column: 12 span;
+    }
+
+    @include mobile {
+      grid-column: 4 span;
+    }
 
     &-descr {
       margin: 0;
@@ -34,6 +43,7 @@
     margin-bottom: 30px;
     font-size: 28px;
     font-weight: 700;
+    line-height: var(--lh120);
 
     & span {
       color: var(--prim-color);
@@ -73,6 +83,16 @@
 
   &__edge {
     grid-column: 6 span;
+
+    @include small-tablet {
+      grid-column: 12 span;
+      margin: 0 50px;
+    }
+
+    @include mobile {
+      margin: 0;
+      grid-column: 4 span;
+    }
   }
 }
 
@@ -122,6 +142,7 @@
       background-color: var(--prim-color);
       left: 0;
       top: 50%;
+      transform: translateY(-50%);
     }
   }
 
@@ -131,6 +152,11 @@
     grid-column: 6 span;
     text-align: center;
     padding: 32px 22px;
+
+    @include mobile {
+      padding: 20px 0;
+      grid-column: 2 span;
+    }
   }
 
   &__num {

@@ -7,6 +7,14 @@
   &__item {
     padding-left: 70px;
     grid-column: 3 span;
+
+    @include tablet {
+      grid-column: 6 span;
+    }
+
+    @include mobile {
+      grid-column: 4 span;
+    }
   }
 
   &__title {
