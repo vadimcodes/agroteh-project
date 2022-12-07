@@ -176,10 +176,6 @@
     }
   }
 
-    }
-
-  }
-
   &__btn {
     display: flex;
     border-radius: var(--br-4);
@@ -191,4 +187,20 @@
     }
 
   }
-}
+
+    }
+
+
+
+  // &__btn {
+  //   display: flex;
+  //   border-radius: var(--br-4);
+  //   padding: 6px;
+  //   transition: background-color .15s ease-in-out;
+
+  //   &:hover {
+  //     background-color: rgb(247, 247, 247);
+  //   }
+
+  // }
+
