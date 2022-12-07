@@ -84,13 +84,16 @@ new Swiper('.products__slider-new', {
 new Swiper('.goods__swiper', {
   slidesPerView: 1,
   loop: true,
+  // autoHeight: true,
+  // autoplay: {
+  //   delay: 10000,
+  // },
   thumbs: {
     swiper: {
       el: ".goods__mini-swiper",
       slidesPerView: 5,
+      spaceBetween: 10,
     }
   }
-
-
 });
 

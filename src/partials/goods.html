@@ -8,7 +8,7 @@
         <li class="tabs__nav-item"><button class="tabs__nav-btn btn-reset" type="button">Описание товара</button></li>
         <li class="tabs__nav-item"><button class="tabs__nav-btn btn-reset" type="button">Характеристики</button></li>
       </ul>
-      <div class="goods__section grid">
+      <div class="goods__section grid goods__section__grid">
         <div class="tabs__content">
           <div class="tabs__panel">
             <div class="tabs__goods grid">
@@ -36,20 +36,41 @@
                           alt="Изображение товара" />
                       </picture>
                     </div>
+                    <div class="swiper-slide goods__slide">
+                      <picture class="goods__slide-pic">
+                        <source srcset="img/img-test/img4.webp" type="image/webp" />
+                        <img loading="lazy" src="img/img-test/img4.jpg" class="image" width="" height=""
+                          alt="Изображение товара" />
+                      </picture>
+                    </div>
+                    <div class="swiper-slide goods__slide">
+                      <picture class="goods__slide-pic">
+                        <source srcset="img/img-test/img5.webp" type="image/webp" />
+                        <img loading="lazy" src="img/img-test/img5.jpg" class="image" width="" height=""
+                          alt="Изображение товара" />
+                      </picture>
+                    </div>
+                    <div class="swiper-slide goods__slide">
+                      <picture class="goods__slide-pic">
+                        <source srcset="img/img-test/img6.webp" type="image/webp" />
+                        <img loading="lazy" src="img/img-test/img6.jpg" class="image" width="" height=""
+                          alt="Изображение товара" />
+                      </picture>
+                    </div>
                   </div>
                 </div>
                 <!-- мини слайдер -->
                 <div class="swiper goods__mini-swiper">
                   <div class="swiper-wrapper goods__mini-wrapper">
                     <div class="swiper-slide goods__mini-slide">
-                      <picture class="goods__slide-pic">
+                      <picture class="goods__mini-pic">
                         <source srcset="img/img-test/img1.webp" type="image/webp" />
                         <img loading="lazy" src="img/img-test/img1.jpg" class="image" width="" height=""
                           alt="Изображение товара" />
                       </picture>
                     </div>
                     <div class="swiper-slide goods__mini-slide">
-                      <picture class="goods__slide-pic">
+                      <picture class="goods__mini-pic">
                         <source srcset="img/img-test/img2.webp" type="image/webp" />
                         <img loading="lazy" src="img/img-test/img2.jpg" class="image" width="" height=""
                           alt="Изображение товара" />
@@ -59,6 +80,27 @@
                       <picture class="goods__slide-pic">
                         <source srcset="img/img-test/img3.webp" type="image/webp" />
                         <img loading="lazy" src="img/img-test/img3.jpg" class="image" width="" height=""
+                          alt="Изображение товара" />
+                      </picture>
+                    </div>
+                    <div class="swiper-slide goods__mini-slide">
+                      <picture class="goods__mini-pic">
+                        <source srcset="img/img-test/img4.webp" type="image/webp" />
+                        <img loading="lazy" src="img/img-test/img4.jpg" class="image" width="" height=""
+                          alt="Изображение товара" />
+                      </picture>
+                    </div>
+                    <div class="swiper-slide goods__mini-slide">
+                      <picture class="goods__mini-pic">
+                        <source srcset="img/img-test/img5.webp" type="image/webp" />
+                        <img loading="lazy" src="img/img-test/img5.jpg" class="image" width="" height=""
+                          alt="Изображение товара" />
+                      </picture>
+                    </div>
+                    <div class="swiper-slide goods__mini-slide">
+                      <picture class="goods__mini-pic">
+                        <source srcset="img/img-test/img6.webp" type="image/webp" />
+                        <img loading="lazy" src="img/img-test/img6.jpg" class="image" width="" height=""
                           alt="Изображение товара" />
                       </picture>
                     </div>
@@ -73,19 +115,48 @@
                     предупредила толку не, маленький но рыбного на берегу они грустный всемогущая? Языком своих своего
                     предупредила себя послушавшись свой переписали собрал!</p>
                 </div>
-                <div class="goods-descr__block">
+                <div class="goods-descr__block goods-descr__block--hide">
+                  <button class="btn-reset goods-descr__all-btn goods-descr__all-btn--hide">Показать все</button>
                   <h4 class="goods-descr__title">Характеристики</h4>
                   <ul class="goods-descr__list list-reset">
                     <li class="goods-descr__item">
                       <span class="goods-descr__naim">св-во хар-ки</span>
+                      <span class="goods-descr__value">характеристика</span>
+                    </li>
+                    <li class="goods-descr__item">
+                      <span class="goods-descr__naim">свойство</span>
                       <span class="goods-descr__value">значение хар-ки</span>
                     </li>
                     <li class="goods-descr__item">
                       <span class="goods-descr__naim">св-во хар-ки</span>
+                      <span class="goods-descr__value">значение</span>
+                    </li>
+                    <li class="goods-descr__item">
+                      <span class="goods-descr__naim">свойство</span>
                       <span class="goods-descr__value">значение хар-ки</span>
                     </li>
                     <li class="goods-descr__item">
-                      <span class="goods-descr__naim">св-во хар-ки</span>
+                      <span class="goods-descr__naim">свойство</span>
+                      <span class="goods-descr__value">значение хар-ки</span>
+                    </li>
+                    <li class="goods-descr__item">
+                      <span class="goods-descr__naim">свойство</span>
+                      <span class="goods-descr__value">значение хар-ки</span>
+                    </li>
+                    <li class="goods-descr__item">
+                      <span class="goods-descr__naim">свойство</span>
+                      <span class="goods-descr__value">значение хар-ки</span>
+                    </li>
+                    <li class="goods-descr__item">
+                      <span class="goods-descr__naim">свойство</span>
+                      <span class="goods-descr__value">значение хар-ки</span>
+                    </li>
+                    <li class="goods-descr__item">
+                      <span class="goods-descr__naim">свойство</span>
+                      <span class="goods-descr__value">значение хар-ки</span>
+                    </li>
+                    <li class="goods-descr__item">
+                      <span class="goods-descr__naim">свойство</span>
                       <span class="goods-descr__value">значение хар-ки</span>
                     </li>
                   </ul>
@@ -109,20 +180,40 @@
             <ul class="goods-descr__list list-reset">
               <li class="goods-descr__item">
                 <span class="goods-descr__naim">св-во хар-ки</span>
+                <span class="goods-descr__value">характеристика</span>
+              </li>
+              <li class="goods-descr__item">
+                <span class="goods-descr__naim">свойство</span>
                 <span class="goods-descr__value">значение хар-ки</span>
               </li>
               <li class="goods-descr__item">
                 <span class="goods-descr__naim">св-во хар-ки</span>
-                <span class="goods-descr__value">значение хар-ки</span>
-              </li>
-              <li class="goods-descr__item">
-                <span class="goods-descr__naim">св-во хар-ки</span>
-                <span class="goods-descr__value">значение хар-ки</span>
+                <span class="goods-descr__value">значение</span>
               </li>
             </ul>
           </div>
         </div>
-        <div class="goods__control">Корзина, цена и т.д.</div>
+        <div class="goods__control goods-control">
+          <div class="goods-control__info">
+            <div class="goods-control__cost">
+              <span class="product__value goods-control__value">Цена</span>
+              <p class="product__price product-price goods-control__price">
+
+                <span class="product-price__current goods-control__current">9 000</span
+                ><span class="product-price__unit goods-control__unit"> ₽/шт.</span>
+              </p>
+            </div>
+            <div class="goods-control__btns">
+              <a class="product__btn btn-reset btn-card" href="#"
+                >В корзину</a
+              >
+
+              @include('stepper.html')
+
+            </div>
+            <p class="goods-control__descr">Доступные способы получения заказа можно выбрать при оформлении заказа</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
