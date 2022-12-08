@@ -72,6 +72,10 @@ a {
   display: none !important; /* stylelint-disable-line declaration-no-important */
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .btn-reset {
   border: none;
   padding: 0;
