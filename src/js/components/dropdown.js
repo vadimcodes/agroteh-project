@@ -16,7 +16,7 @@ const setDropDownAction = (elements, index) => {
   elements[index].button.addEventListener("click", () => {
     elements[index].element.classList.toggle("active");
     if (elements[index]?.disableScroll) {
-      document.body.classList.add("no-scroll");
+      document.body.classList.add("dis-scroll");
     }
   });
   window.addEventListener("click", (e) => {
@@ -29,7 +29,7 @@ const setDropDownAction = (elements, index) => {
       elements[index].element.classList.remove("active");
     }
     if (elements[index].element.getAttribute("class") === "catalog") {
-      document.body.classList.remove("no-scroll");
+      document.body.classList.remove("dis-scroll");
     }
   });
 };

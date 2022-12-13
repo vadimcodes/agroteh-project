@@ -1,10 +1,14 @@
 const cartBtns = document.querySelectorAll(".btn-card");
-const productNames = document.querySelectorAll(".product__link");
+const productNames = location.href.includes("page-goods")
+  ? document.querySelectorAll(".goods__title")
+  : document.querySelectorAll(".product__link");
 const productPrices = document.querySelectorAll(".product-price__current");
 const productCounts = document.querySelectorAll(".stepper__input");
-const productImages = document.querySelectorAll(
-  `.image-switch__item[data-index*="0"] source`
-);
+const productImages = location.href.includes("page-goods")
+  ? document.querySelectorAll(
+      `.swiper-slide[data-swiper-slide-index*="0"] source`
+    )
+  : document.querySelectorAll(`.image-switch__item[data-index*="0"] source`);
 
 const plusBtns = document.querySelectorAll("[data-action='plus']");
 const minusBtns = document.querySelectorAll("[data-action='minus']");
@@ -33,6 +37,7 @@ const renderCartQuantity = () => {
 
 cartBtns.forEach((btn, index) =>
   btn.addEventListener("click", (e) => {
+    console.log(index);
     e.preventDefault();
     e.currentTarget.classList.add("product__btn--active");
     const product = {
