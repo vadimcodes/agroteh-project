@@ -7,3 +7,4 @@ import "./components/cart.js";
 import "./components/maps.js";
 import "./components/order.js";
 import "./components/block-row.js";
+import "./components/goods-info.js";

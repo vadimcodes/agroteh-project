@@ -37,4 +37,3 @@ columnBtn?.addEventListener("click", (e) => {
 });
 
 if (location.href.includes("page-shop")) changeClassName("row");
-

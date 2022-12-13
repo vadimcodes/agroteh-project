@@ -5,7 +5,8 @@
     // margin-bottom: 80px;
   }
 
-  &__inner {}
+  &__inner {
+  }
 
   &__filter {
     grid-column: 3 span;
@@ -172,39 +173,28 @@
   &__item {
     &:not(:last-child) {
       margin-right: 6px;
-
     }
   }
-
-    }
-
-  }
-
   &__btn {
     display: flex;
     border-radius: var(--br-4);
     padding: 6px;
-    transition: background-color .15s ease-in-out;
+    transition: background-color 0.15s ease-in-out;
 
     &:hover {
       background-color: rgb(247, 247, 247);
     }
-
   }
+}
 
-    }
+// &__btn {
+//   display: flex;
+//   border-radius: var(--br-4);
+//   padding: 6px;
+//   transition: background-color .15s ease-in-out;
 
+//   &:hover {
+//     background-color: rgb(247, 247, 247);
+//   }
 
-
-  // &__btn {
-  //   display: flex;
-  //   border-radius: var(--br-4);
-  //   padding: 6px;
-  //   transition: background-color .15s ease-in-out;
-
-  //   &:hover {
-  //     background-color: rgb(247, 247, 247);
-  //   }
-
-  // }
-
+// }
