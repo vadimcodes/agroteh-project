@@ -21,7 +21,7 @@
     // height: 280px;
     height: 240px;
 
-    &:hover ~ .product__data .product__link {
+    &:hover~.product__data .product__link {
       color: var(--prim-color);
     }
 
@@ -30,7 +30,8 @@
     }
 
     @include mobile {
-      height: 200px;
+      // height: 200px;
+      height: 150px;
     }
   }
 

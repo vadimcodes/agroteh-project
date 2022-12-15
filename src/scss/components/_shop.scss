@@ -5,8 +5,7 @@
     // margin-bottom: 80px;
   }
 
-  &__inner {
-  }
+  &__inner {}
 
   &__filter {
     grid-column: 3 span;
@@ -173,8 +172,10 @@
   &__item {
     &:not(:last-child) {
       margin-right: 6px;
+
     }
   }
+
   &__btn {
     display: flex;
     border-radius: var(--br-4);
@@ -186,6 +187,8 @@
     }
   }
 }
+
+
 
 // &__btn {
 //   display: flex;
