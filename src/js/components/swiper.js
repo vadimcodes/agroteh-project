@@ -17,12 +17,13 @@ new Swiper('.banner__main', {
 // слайдер товаров Актуальные предложения
 new Swiper('.products__slider-actual', {
   slidesPerView: 4,
-  spaceBetween: 30,
+  spaceBetween: 15,
   autoHeight: true,
 
   breakpoints: {
     220: {
       slidesPerView: 1,
+      spaceBetween: 15,
     },
     320: {
       slidesPerView: 2,
@@ -32,6 +33,7 @@ new Swiper('.products__slider-actual', {
     },
     1024: {
       slidesPerView: 4,
+      spaceBetween: 30,
     }
   },
 
@@ -56,12 +58,13 @@ new Swiper('.banner__second', {
 // слайдер товаров Новинки
 new Swiper('.products__slider-new', {
   slidesPerView: 4,
-  spaceBetween: 30,
+  spaceBetween: 15,
   autoHeight: true,
 
   breakpoints: {
     220: {
       slidesPerView: 1,
+      spaceBetween: 15,
     },
     320: {
       slidesPerView: 2,
@@ -71,6 +74,7 @@ new Swiper('.products__slider-new', {
     },
     1024: {
       slidesPerView: 4,
+      spaceBetween: 30,
     }
   },
 

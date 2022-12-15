@@ -20,6 +20,7 @@ html {
   min-width: 320px;
   min-height: 100%;
   font-size: 14px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 img {
@@ -70,6 +71,10 @@ a {
 
 .is-hidden {
   display: none !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .btn-reset {
@@ -164,6 +169,10 @@ a {
   text-align: center;
   line-height: var(--lh120);
   letter-spacing: -0.4px;
+
+  @include mobile {
+    font-size: 22px;
+  }
 }
 
 .page-title {
@@ -179,6 +188,10 @@ a {
   color: var(--dark-grey);
   text-align: center;
   line-height: var(--lh120);
+
+  @include mobile {
+    font-size: 15px;
+  }
 }
 
 .grid {
@@ -188,6 +201,6 @@ a {
 
   @include mobile {
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 15px;
   }
 }

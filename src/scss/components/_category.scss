@@ -3,5 +3,9 @@
 
   &__title {
     margin-bottom: 30px;
+
+    @include mobile {
+      margin-bottom: 15px;
+    }
   }
 }
